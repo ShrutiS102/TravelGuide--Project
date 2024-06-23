@@ -1,0 +1,176 @@
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  
+}
+
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.container{
+
+  padding-top: 0px;
+  padding-bottom: 50px;
+  padding-top: 0px;
+  justify-content: center;
+  
+}
+
+
+/* new */
+
+
+
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.new{
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), 
+              url('/pexels-muffin-2468773.jpg');
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.menu a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid indianred;
+  transition: 0.4s linear;
+}
+
+.menu a:hover:before{
+  width: 90%;
+}
+
+.register a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  background: indianred;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.register a:hover{
+  background: transparent;
+  border: 1px solid indianred;
+}
+
+.h-txt{
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.h-txt span{
+  letter-spacing: 5px;
+}
+
+.h-txt h1{
+  font-size: 3.5rem;
+}
+
+.h-txt a{
+  text-decoration: none;
+  background: indianred;
+  color: white;
+  padding: 10px 20px;
+  letter-spacing: 5px;
+  transition: 0.4s;
+}
+
+.h-txt a:hover{
+  background: transparent;
+  border: 1px solid indianred;
+}
+
+
+
+/* new new  */
+/* Initial state of Get Started buttons */
+.get-started {
+  transition: all 0.3s ease;
+}
+
+/* Expanded state of Get Started buttons */
+.get-started.expanded {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Initial state of elements */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease;
+}
+
+/* State when elements become visible */
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
